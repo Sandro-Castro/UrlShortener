@@ -1,0 +1,84 @@
+# Build artifacts
+bin/
+obj/
+
+# User-specific files (Visual Studio, Rider, VS Code settings, etc.)
+.vs/
+.vscode/
+.idea/
+
+# Visual Studio files
+*.suo
+*.user
+*.userosscache
+*.csproj.user
+*.sln.docstates
+
+# Rider
+*.iml
+*.ipr
+*.iws
+
+# Log files
+*.log
+
+# SQLite database locais gerados
+# Ignora o arquivo de banco local (ex: urlshortener.db) e arquivos de journal
+*.db
+*.db-journal
+urlshortener.db
+
+# EF Core Migrations lock, caso seja gerado localmente (raro, mas por segurança)
+__EFMigrationsLock
+
+# Arquivos de configuração de desenvolvimento local que podem conter segredos
+appsettings.Development.json
+launchSettings.json
+
+# Arquivos de secrets do .NET (embora geralmente armazenados fora do repositório)
+secrets.json
+
+# Configurações de ambiente (se estiver usando arquivos .env)
+.env
+.env.*
+
+# Cache / pacotes temporários
+*.DS_Store
+Thumbs.db
+node_modules/    # se fechar alguma dependência front-end local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs do Docker, se usado
+docker-compose*.log
+
+# Outros artefatos de publicação
+publish/
+dist/
+
+# Arquivos gerados por ferramentas de análise/coverage
+coverage/
+*.coverage
+*.coveragexml
+TestResults/
+
+# Ferramentas de geração de código (se houver arquivos gerados localmente que não devam ir ao repositório)
+# Por exemplo, se você gerar código temporário
+Generated/
+
+# Certificados de desenvolvimento
+*.pfx
+*.cer
+
+# Arquivos temporários do OS
+*.tmp
+*.temp
+
+# Arquivos de backup/lock de editores
+*~ 
+*.lock
+
+# Ajuste adicional:
+# - Caso você queira versionar um arquivo SQLite de exemplo ou de seed, remova-o da lista acima.
+# - Se tiver outros arquivos sensíveis ou gerados localmente, adicione aqui conforme necessidade.
